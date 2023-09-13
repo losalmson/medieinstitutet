@@ -1,0 +1,55 @@
+header {
+    width: 50%;
+}
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+p {
+    font-size: 32px; /* Don't do that! Let the browser/user decide */
+}
+
+body {
+    width: 100vw;
+    width: 100%; /* Take away the horizontal scroolbar */
+    min-height: 100vh; /* The body grows with the content */
+}
+    
+h1 {
+    border: 2px dashed yellow;
+    width: 50%; /* 50% of the parent header */
+    font-size: 3rem;
+    padding: 0.5em; /* Here em is usable */
+}
+
+/* REM Root from the parent element  (main) em Use this instead of pixel */
+
+main {
+    width: 50vw; /* View port window */
+    width: 100%;
+    background-color: skyblue;
+    font-size: 1rem;
+}
+p {
+    font-size: 1rem;  /* default */
+    font-size: 2rem;  /* 32 px if em it double the size of main -> better to use rem instead of em */
+}
+
+/* CH character */
+
+p {
+    width: 40ch;   /* 40 characters */
+
+}
+
+/* Everything in CSS is a Box */
+
+/* Let's turn it to a circle */
+
+p .circle {
+    font-size: 0.2rem;
+    width:50%;
+}

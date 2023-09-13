@@ -1,0 +1,18 @@
+header[role=banner] {
+  margin: 20px 0 30px 0;
+  border-bottom: 4px solid #333;
+}
+header[role=banner] #logo {
+  margin: 0 20px 0 0;
+  padding: 10px;
+}
+header[role=banner] img {
+  display: block;
+  opacity: 0.95;
+}
+header[role=banner] h1 {
+  padding: 15px 0;
+  font-size: 54px;
+  line-height: 1;
+  font-weight: bold;
+}/*# sourceMappingURL=nested.css.map */
