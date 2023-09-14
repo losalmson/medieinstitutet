@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    font-size: 2rem;
+    min-width: 80vh;
+    max-width: 100vh;
+    min-height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    display: flex;
+    gap: 0.5rem;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    min-width: 100px;
+    max-width: 50px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   /* flex-basis: 100px; */
+    flex: 1 1 150px;
+
+    /* flex: 1 100px  (förkortning av basis och grow*/
+}
+
+.box:nth-child(2) {
+    flex: 2 2 150px;
+    order: 0;
+}
