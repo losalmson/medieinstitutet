@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <article class="testForm">
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Student Info</legend>
+        <fieldset>
+          <legend>Personal Info</legend><br>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            autocomplete="on"
+            required
+            autofocus>
+          </p><br>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            autocomplete="on"
+            required>
+          </p><br>
+          <p>
+            <label for="pw">Password:</label>
+            <input
+            type="password"
+            name="pw"
+            id="pw"
+            minlength="8"
+            required>
+          </p><br>
+        </fieldset><br>
+        <fieldset>
+          <legend>Photo</legend>
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/12/13/22/25/bird-1905255_1280.jpg" 
+            alt="Kingfish" style="width:30%">
+            <figcaption>A Kingfish Student!</figcaption>
+          </figure>
+        </fieldset>
+        <button type="submit" formaction="https://httpbin.org/post"
+        formmethod="post">Submit</button>
+        </fieldset>
+      </form>
+    </article>
+  </main>
+</body>
+</html>
