@@ -1,0 +1,42 @@
+/* Variables */
+/*
+$mobile: 200px;
+
+@mixin mobile ($mobile) {
+    @media(max-width: $mobile) {
+    }
+    @media(max-width: $background-color) {
+    }
+
+
+}
+
+p {
+    @include mobile($mobile){
+        flex-direction: column;
+    }
+}
+*/
+/*
+
+@media (max-width: 400px) {
+    .para1 {
+        width:50vh;
+    }
+    body {
+        background-color: lightblue;
+    }
+}
+
+*/
+@media (max-width: 400px) {
+  .para1 {
+    width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .para2 {
+    width: 100px;
+  }
+}/*# sourceMappingURL=syle.css.map */

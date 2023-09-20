@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Introduction to SASS
+
+	*SASS = Syntactically Awesome Stylesheet.
+	*Install SASS extension in VSC called Live Sass Compiler
+	 v6.1.1 by Glenn Marks.
+	*SASS is a pre-processing language.
+	*SASS is completely compatible with all versions of CSS
+	 SASS is open source.
+
+ Variables
+    * Create new variable using the dollar character.
+*/
+body {
+  background-color: black;
+  width: 54.9%;
+  color: white;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Nested 
+   ======
+	Class inside another class.
+
+	*/
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  /* Inheritance */
+}
+.section .section_para1, .section .section_para2 {
+  margin-left: 60px;
+  max-width: 80ch;
+  /*font-weight:map-get($font-weights,bold);*/
+  font-weight: 400;
+}
+.section .section_para1:hover, .section .section_para2:hover {
+  color: blue;
+}
+.section .section_para2:hover {
+  color: red;
+}
+@media (max-width: 2000px) {
+  .section {
+    flex-direction: column;
+  }
+}
+
+.light {
+  background: white;
+  color: black;
+}
+
+/* @include mobile
+	flex-direction: column;
+ */
+/* Functions
+   There are many functions in Sass.
+   The general syntax is $ function function_name(variables)
+   A function return a value!
+
+   See weight function
+
+*/
+/* Mixing
+   Define style.
+   A mixing does not return a value. It's just a bunch of code that are commun to seeral files.
+
+   Create a mixing with @mixing Mymixing($argument){}
+   Use @include Mymixing 
+
+
+*/
+/* Extensions 
+   @extend
+   Inheritance by a class of another class
+
+*/
+/* Partials
+
+ File start with underscore.
+ Use import without the underscore and ending .scss
+ See at the begining of this file.
+
+*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+pre {
+  max-width: 80ch;
+}
+
+h1 {
+  text-align: center;
+}
+
+article {
+  counter-reset: heading;
+}
+
+article section h2:before {
+  content: counter(heading) ". ";
+  counter-increment: heading;
+  counter-reset: subheading;
+}
+
+article section h3:before {
+  content: counter(heading) "." counter(subheading) " ";
+  counter-increment: subheading;
+}
+
+ul li {
+  margin: 80px;
+}/*# sourceMappingURL=firstsass.css.map */

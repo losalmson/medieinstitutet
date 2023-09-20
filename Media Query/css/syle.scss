@@ -1,0 +1,48 @@
+/* Variables */
+
+/*
+$mobile: 200px;
+
+@mixin mobile ($mobile) {
+    @media(max-width: $mobile) {
+    }
+    @media(max-width: $background-color) {
+    }
+
+
+}
+
+p {
+    @include mobile($mobile){
+        flex-direction: column;
+    }
+}
+*/
+
+$maxwidth: 400px;
+$width: 200px;
+
+/*
+
+@media (max-width: 400px) {
+    .para1 {
+        width:50vh;
+    }
+    body {
+        background-color: lightblue;
+    }
+}
+
+*/
+
+@mixin reduce($maxwidth, $width) {
+    @media (max-width: $maxwidth) {
+        width: $width;
+    }
+}
+        .para1 {
+            @include reduce(400px, 200px);
+        }
+        .para2 {
+            @include reduce(400px, 100px);
+        }
