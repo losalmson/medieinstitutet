@@ -1,4 +1,10 @@
 body {
   font-weight: 500;
-  width: div(85.2, 12.6);
+  width: 6.7619047619;
+  font-size: 1.875em;
+  background-color: black;
+}
+
+h1 {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+
+* {
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    width: 6;
+    background-color: #FCFBF4;
+    color: black;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.social-icons-container{
+    margin-top: 4rem;
+    
+}
+.social-icons-container a {
+    font-size: 3rem;
+    color: black;
+    margin-left: 3rem;
+    
+}
+
+.social-icons-container a:hover {
+    color: #5ac8fa;
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-facebook:hover {
+    color:  #5ac8fa;
+  }
