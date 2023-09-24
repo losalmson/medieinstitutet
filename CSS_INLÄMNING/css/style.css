@@ -1,0 +1,122 @@
+
+/*Universal Selector to set margin and padding to zero for all elements.
+The property border-box will include padding and border in width and height*/
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh; /*Body height will take 100% of vh*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.container {
+    display: grid; /*Declaring display:grid will tell the browser to display all elements within the container as grid box models*/
+    grid-template-columns: repeat(12, 1fr); /*Creates a repeating grid pattern of 12 columns, where each column takes up one eaqually big fraction*/
+
+    margin: 0rem;
+    padding: 0rem;
+    
+    /*Creates a map / grid pattern where we can decide how the content of the page should be displayed by later assigning grid area names to the CSS selectors*/
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "flag flag flag flag flag flag flag flag flag flag flag flag"
+    "mountain mountain mountain mountain mountain mountain mountain mountain p1 p1 p1 p1"
+    "sidebar sidebar gallery gallery gallery gallery gallery gallery p1 p1 p1 p1"
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
+;
+}
+
+.header {
+    grid-area: header;
+    padding: 10px;
+    display: flex; /*Creates a flex container*/
+    justify-content: center; /*Objects are aligned in the center of container*/
+}
+
+.el {
+    background-color: darkviolet;
+}
+
+ul {
+    list-style-type: none; /*Will remove bulletpoints*/
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center; /*Objects are aligned in the center of container verticaly*/
+    justify-content: space-between; /*Objects are aligned with equal space between each other*/
+    width: 100%; /*Objects will take up 100% of its' container*/
+}
+
+li {
+    margin-right: 20px; /*Will help center li items*/
+    padding: 35px; /*Add padding between li items*/
+}
+a {
+    text-decoration: none; /*Remove underline from links*/
+    color: white;
+}
+
+a:hover {
+    color: yellow; /*Creates yellow hovering effect for all links*/
+}
+
+.box:nth-child(2) {
+    grid-area: flag;
+    margin: 1rem; /*Adds equal margin all around the object*/
+}
+
+.box:nth-child(1) {
+    grid-area: mountain;
+    padding: 20px 10px;
+    margin-bottom: 1rem;
+    background-color: blue;
+}
+
+.box:nth-child(3) {
+    grid-area: p1;
+    padding: 15px;
+    margin-left: 1rem;
+    background-color: lightblue;
+}
+
+
+.box:nth-child(3)::first-letter{
+    font-size: 4rem;
+    color:yellow;
+}
+
+.box:nth-child(4) {
+    grid-area: sidebar;
+    padding: 40px;
+    margin-right: 1rem;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column; /*Objects are placed in a column from top to bottom*/
+    justify-content: flex-start; /*Objects are aligned to the left in the container*/
+    align-items: flex-start; /*Objects are aligned to the top of the container*/
+}
+
+.box:nth-child(4) p{
+    writing-mode: vertical-rl; /*Text is laid out vertical from bottom to top*/
+    text-orientation: mixed; /* Text will display as vertical*/
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.box:nth-child(5) {
+    grid-area: gallery;
+    padding: 20px 10px;
+    background-color: purple;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 30px;
+    text-align: right; /*Text is aligned to the right in the container*/
+}
