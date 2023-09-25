@@ -1,0 +1,8 @@
+
+.outer-container {
+    border: 3px dashed black;
+    width: 75vh;
+    height: 90vh;
+    margin: 20px;
+    position: relative;
+}

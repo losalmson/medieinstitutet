@@ -1,0 +1,56 @@
+
+header {
+    background-color: red;
+    border: 5px solid grey;
+    border-radius: 10px;
+}
+
+header .navigation {
+ background-color: aqua;
+}
+
+.content {
+    background-color:#d2e5b5;
+    padding: 20px;
+    margin: 10px;
+    border: 1px dotted black;
+}
+
+#main-content {
+    background-color: #9deb9d;
+}
+
+section > p:first-child{
+    background-color: #f5a4f5;
+}
+
+section:hover {
+    cursor: pointer;
+}
+
+.mydiv {
+    border: 2px solid darkgreen;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    border: 2px solid red;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.rotate {
+    transform: rotate(10deg);
+    background-color: hsl(255, 100%, 70%);
+    padding: 20px;
+    position: relative;
+}
