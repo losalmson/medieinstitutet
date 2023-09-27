@@ -1,0 +1,11 @@
+.container {
+    font-size: 2rem;
+    color: black;
+    border: 3px solid;
+
+    .container .container__para {
+        font-size: 4rem;
+        color: red;    
+    }
+}
+

@@ -1,0 +1,23 @@
+
+body {
+    font-size: 2rem;
+    background-color: rgb(255, 187, 247);
+    text-align: center;
+}
+
+.font1 {
+    font-family: 'Croissant One', cursive;;
+    text-shadow: rgb(255, 108, 184) 2px 2px;
+}
+
+.font2 {
+    font-family: 'Inter', sans-serif;
+}
+
+.font3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font4 {
+    font-family: 'Mooli', sans-serif;
+}

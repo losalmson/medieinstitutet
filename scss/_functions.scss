@@ -1,8 +1,0 @@
-/* All Functions */
-
-@function weight($weight) {
-    @return map-get($font-weight, $weight);
-}
-@function color($color) {
-    @return map-get($mycolors, $color);
-}
