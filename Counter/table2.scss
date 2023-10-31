@@ -1,0 +1,46 @@
+@use 'sass:list';
+
+body {
+	margin: 20px; 
+	background: #fff; 
+	color: #000; 
+	font-family: Arial, sans-serif;
+}
+
+table {
+width: 600px;
+border: 1px solid;
+table-layout: fixed;
+border-collapse: collapse;
+margin: 0 auto;
+}
+
+caption {
+	text-transform: uppercase;
+	font-weight: bold; 
+	margin-bottom: 20px; 
+	padding: 0.2em 0; 
+	text-align: center;
+}
+
+td {
+border: 1px solid;
+width: 60px;
+height: 60px;
+vertical-align: middle;
+text-align: center;
+}
+
+$counters: one,two,three,four,five,six,seven,eight,nine,ten;
+
+@for $i from 1 to 11 {
+		$name:nth($counters, $i);
+		##{$name} {
+			counter-reset: $name;
+		}
+		##{$name}>td::before {
+				counter-increment: $name $i;
+				content: counter($name);
+		}
+	}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+<!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lynx Photo Studios</title>
+<!-- Styles -->
+    <link rel="icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <body>
+<!-- Header -->
+    <header id="header">
+      <img class="logo" src="images/lynx.svg" alt="logo" id="logo">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="local.html">Local</a></li>
+        <li><a href="international.html">International</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="social-icons" href="https://www.instagram.com/losalmson/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a></li>
+        </ul>
+      </nav>
+    </header>
+<!-- CONTACT -->
+    <main>
+      <section class="section-contact">
+        <div class="container-contact">
+          <h1>What's Up?</h1>
+<!-- Contact E-mail Form -->
+        <form action="thanks.html" method="POST">
+          <div class="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" id="name" class="form-element">
+          </div>
+        <div class="form-group">
+          <label for="email">E-mail*:</label>
+          <input type="email" name="email" id="email" required class="form-element">
+        </div>
+        <div class="form-group">
+          <label for="email">Confirm e-mail*:</label>
+          <input type="email" name="email-confirm" id="email-confirm" required class="form-element">
+        </div>
+        <div class="form-group">
+          <p id="p-subject">Subject:</p>
+          <select name=”Subject”>
+             <option value="work">I wanna work</option>
+             <option value="question">I have a question</option>
+             <option value="buy">I wanna buy a print</option>
+             <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group-full">
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" class="form-element"></textarea>
+        </div>
+        <div class="submit-group">
+          <input type="submit" value="SEND MESSAGE">
+        </div>
+      </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+      <footer>
+        <a class="social-icons-footer" href="#header">
+          <i class="fa-solid fa-circle-arrow-up"></i>
+        </a>
+        <a class="social-icons-footer" href="mailto:mialo.salmson@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+    <!-- Butten to toggle dark mode -->
+          <button class="btn-footer" onClick="darkMode()">Dark/Light Mode</button>
+    <!-- Button for last modified -->
+        <div id="placeholder">
+          <button class="btn-footer" onclick="lastedit()">Last Edited</button>
+        </div>
+      </footer>
+      <script src="myscript.js"></script>
+    </body>
+    </html>

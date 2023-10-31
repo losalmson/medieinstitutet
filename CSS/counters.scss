@@ -1,0 +1,43 @@
+/*
+
+1. counter-reset: mycounter 1;
+2. counter-increment: mycounter -2; (Decrement with -2 )
+3. content: counter(mycounter); (apply only to a content!!)
+
+@for loop with SASS
+===================
+@for $row from 1 to 11 {    (End at 10!)
+	@warn $row;
+}
+
+Exercices:
+==========
+1) Write a counter and use it with a warning.
+@warn 
+
+2) Use a for loop to change the content of 10 paragraphs 
+<p></p>
+so att the result looks like:
+
+5
+6
+7
+...
+15
+
+*/
+/* Solution 1 */
+body {
+	counter-reset: mycounter 3;
+	@warn "#{counter(mycounter)}";
+}
+
+
+/* Solution2 */
+body {
+	@for $i from 5 to 16 {
+		& p:nth-child(#{$i})::before {
+			content: "#{$i}";
+		}
+	}
+}
