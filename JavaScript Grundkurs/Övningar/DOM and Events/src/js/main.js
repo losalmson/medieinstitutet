@@ -1,4 +1,6 @@
 
+/*
+
 //Find element and add class 
 const p = document.getElementById("loremParagraph");
  p.className = "red"; 
@@ -22,3 +24,32 @@ const p = document.getElementById("loremParagraph");
  img.onmouseover = function () {
     alert("Hello Kitty");
  }
+
+ */
+
+ const p = document.getElementById("myParagraph");
+
+ p.className = "red";
+
+ const div = document.getElementById("firstDiv");
+
+div.id = "titleDiv";
+
+const welcomeParagraph = document.getElementById("welcome-p");
+
+welcomeParagraph.innerHTML = "You are sooo very welcome";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
