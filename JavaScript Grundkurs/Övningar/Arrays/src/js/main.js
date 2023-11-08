@@ -24,15 +24,28 @@ for (let i = 0; i < numbers.length; i++) {
   console.log(sum);
 }
 
+/*
 const animals = ["Katt", "Hund", "Fisk", "Zebra"];
 const ul = document.getElementById("myList");
 
 for (let i = 0; i < animals.length; i++) {
   const li = document.createElement("li");
-li.innerHTML = animals [i];
+li.innerHTML = animals[i];
 ul.appendChild(li);
-}
+} 
+*/
 
+
+const animals = ["Katt", "Hund", "Fisk", "Zebra"];
+const ul = document.createElement("ul");
+
+animals.forEach((value) => {
+ const li = document.createElement("li");
+li.innerHTML = value;
+ul.appendChild(li);
+});
+
+document.body.appendChild(ul);
 
 
 
